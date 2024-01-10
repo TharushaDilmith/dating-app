@@ -93,3 +93,14 @@ Certainly! If you want to create a .NET Web API project using Visual Studio Code
    ```
 
 This README.md file is just a template; you should customize it based on your project's specific details.
+
+
+//migration
+dotnet tool install --global dotnet-ef --version 8.0.1
+
+
+//initial migration
+dotnet ef migrations add InitialCreate -o Data/Migrations
+
+//update migration
+ dotnet ef database update
